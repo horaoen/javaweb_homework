@@ -1,0 +1,70 @@
+.register {
+  margin: 0 auto;
+  width: 400px;
+}
+.form-group .title {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+form {
+  margin-top: 70px;
+}
+.form-group input {
+  width: 210px;
+}
+
+.form-group {
+  margin: 30px auto;
+}
+
+#logo img {
+  width: 60px;
+  vertical-align: middle;
+}
+#logo {
+  height: 60px;
+  padding: 10px 10px;
+}
+#logo #title {
+  font-size: large;
+}
+
+hr {
+  background-color:gray;
+  height: 1px;
+  border: none;
+  width: 97%;
+}
+
+select {
+  width: 50px;
+  margin-right: 3px;
+}
+
+.form-group input[type=radio] {
+  width: 20px;
+  margin-right: 50px;
+}
+
+.form-group .aggrement {
+  width: 20px;
+  margin-right: 0px;
+}
+
+form input.submit {
+  background-color: skyblue;
+  width: 90px;
+  height: 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+
+a {
+  text-decoration: none;
+}

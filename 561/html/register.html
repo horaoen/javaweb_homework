@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>方浩冉</title>
+    <link href="../css/register.css" rel="stylesheet" type="text/css" />
+    <script src="../js/register.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="../img/logo.webp" />
+        <span id="title">QQ空间</span>
+      </div>
+      <hr />
+    </header>
+    <div class="register">
+      <form method="post" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="email" class="title">邮箱帐号</label>
+          <input id="email" name="email"/>
+        </div>
+        <div class="form-group">
+          <label for="name" class="title">昵称</label>
+          <input id="name" name="name"/>
+        </div>
+        <div class="form-group">
+          <label class="title">生日</label>
+          <select name="date-type">
+            <option value="公历">公历</option>
+            <option value="农历">农历</option>
+          </select>
+          <select name="year">
+            <option value="-">-</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2003">2003</option>
+          </select>
+          <select name="month">
+            <option value="-">-</option>
+            <option value="2000">1</option>
+            <option value="2001">2</option>
+            <option value="2003">3</option>
+          </select>
+          <select name="day">
+            <option value="-">-</option>
+            <option value="2000">1</option>
+            <option value="2001">2</option>
+            <option value="2003">3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="title">性别</label>
+          <label for="men">男</label>
+          <input type="radio" id="men" name="gender" value="男" />
+          <label for="women">女</label>
+          <input type="radio" id="women" name="gender" value="女" />
+        </div>
+        <div class="form-group">
+          <label for="password" class="title">密码</label>
+          <input id="password" name="password"/>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password" class="title">确认密码</label>
+          <input id="confirm-password" name="confirm-password"/>
+        </div>
+        <div class="form-group">
+          <label class="title">所在地</label>
+          <select style="width: 60px;">
+            <option value="中国">中国</option>
+          </select>
+          <select style="width: 60px;">
+            <option value=”江西">江西</option>
+          </select>
+          <select style="width: 60px;">
+            <option value="南昌">南昌</option>
+          </select>
+        </div>
+        <div class="form-group" style="text-align: center;">
+          <input type="submit" class="submit" value="立即注册">
+        </div>
+        <div class="form-group" style="text-align: center;">
+          <input type="checkbox" class="aggrement" id="accept" name="accept" value="同意">
+          <label for="accept">我接受</label>
+          <a href="#">QQ空间服务协议</a>
+          <a href="#">QQ号码规则</a>
+        </div>
+      </form>
+    </div>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans        
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="hello" class="test.HelloBean" >
+		<property name="message" value="方浩冉" />
+		<property name="person"  ref="thePerson" />
+	</bean>
+	<bean id="thePerson" class="test.Student" >
+		<property name="name" value="方浩冉" />
+	</bean>
+	<bean id="user1" class="test.User">
+		<property name="username" value="horaoen"/>
+		<property name="password" value="123456" />
+	</bean>
+</beans>
